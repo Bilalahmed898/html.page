@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script>
+  
+</script>
+</head>
+<body>
+    
+        <header>
+          <div class= logo>
+              <img src="logo.PNG" width="115" height="90">
+
+          </div>
+        </header>
+        <nav>
+            <div class ="icon-bar">
+        
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/windows/32/000000/person-male.png"/>
+                    </div>  
+                    <div class="name" data-text="Students">Students</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="active">
+                        <img src="https://img.icons8.com/ios/32/000000/book.png"/>
+                    </div>  
+                    <div class="name" data-text="Lesson Plan">Lesson Plan</div>
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/windows/32/000000/settings.png"/>
+                    </div>  
+                    <div class="name" data-text="Settings">Settings</div>
+                </a>
+            </li>
+            </ul>
+            </div>
+        </nav>
+       
+        <div class="form">
+            <input type="text" id="fname" name="firstname" placeholder="Insert URL here">
+            <h5 style="text-align:center">or</h5>
+            <div class="box"><b>upload</b></div>
+        </div>
+
+        <script>
+            
+            var header = document.getElementById("myDIV");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+              });
+            }
+            </script>
+</body>
+</html>
